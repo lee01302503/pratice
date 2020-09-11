@@ -5,6 +5,8 @@
 */
 int main(void)
 {
-  printf("%d / %d = %.6lf", 1, 2, 0.5);
+  printf("%c\n", 'A');
+  printf("%s\n", "A");
+  printf("%c is %s.\n", '1', "first");
   return 0;
 }
