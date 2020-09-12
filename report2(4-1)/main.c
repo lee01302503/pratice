@@ -5,12 +5,15 @@
 */
 int main(void)
 {
-  double a = 4.0, b = 1.2;
+  int a, b, tot;
+  double avg;
 
-  printf("%.1lf + %.1lf = %.1lf\n", a, b, a + b);
-  printf(" %.1lf - %.1lf = %.1lf\n", a, b, a - b);
-  printf("%.1lf * %.1lf = %.1lf\n", a, b, a * b);
-  printf("%.1lf / %.1lf = %.1lf\n", a, b, a / b);
+  printf("Two subject Score : ");
+  scanf("%d%d", &a, &b);
+  tot = a + b;
+  avg = tot / 2.0;
+
+  printf("Avg : %.1lf\n", avg);
 
   return 0;
 }
