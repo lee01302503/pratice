@@ -6,11 +6,11 @@
 int main(void)
 {
   int kor = 70, eng = 80, mat = 90;
-  int tot = 240;
+  int tot = 0;
 
   tot = kor + eng + mat;
   printf("Korea : %d, English : %d, Math : %d\n", 70, 80, 90);
-  printf("Toatal : %d\n", kor + eng + mat);
+  printf("Toatal : %d\n", tot);
 
 
   return 0;
