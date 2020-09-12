@@ -5,8 +5,8 @@
 */
 int main(void)
 {
-  printf("%c\n", 'A');
-  printf("%s\n", "A");
-  printf("%c is %s.\n", '1', "first");
+  printf("Num : %d\n", 17932042);
+  printf("Name : %s\n", "Sangyoung Lee");
+  printf("Grade : %c\n", 'A');
   return 0;
 }
