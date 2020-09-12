@@ -5,17 +5,19 @@
 */
 int main(void)
 {
-  int a = 10, b = 5;
-  int res;
+  int hour, min, sec;
+  double time = 3.76;
 
-  res = a / b * 2;
-  printf("res = %d\n", res);
-  res = ++a * 3;
-  printf("res = %d\n", res);
-  res = a > b && a != 5;
-  printf("res = %d\n", res);
-  res = a % 3 == 0;
-  printf("res = %d\n", res);
+  hour = (int)time;
+  time -= hour;
+  time *= 60.0;
+  min = (int)time;
+  time -= min;
+  time *= 60.0;
+  sec = (int)time;
+  printf("3.76time is %dhour %dmin %dsec\n", hour, min, sec);
+
+
 
   return 0;
 }
