@@ -5,14 +5,12 @@
 */
 int main(void)
 {
-  int a;
+  int i;
 
-  do
+  for (i = 0; i < 5; i++)
   {
-	printf("intger number : ");
-	scanf("%d", &a);
-  } while (a < 0);
-  printf("%d > 0\n", a);
+	printf("Be happy\n");
+  }
 
   return 0;
 }
