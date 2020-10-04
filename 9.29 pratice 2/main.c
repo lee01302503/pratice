@@ -3,25 +3,27 @@
 #include <string.h>
 /* made by Prof. Lee
 */
+
+double average(double A, double B);
+
 int main(void)
 {
-  int i, j;
+  double A = 0;
+  double B = 0;
 
-  for (i = 0; i < 5; i++)
-  {
-	for (j = 0; j < 5; j++)
-	{
-	  if ((i == j) || (i+j==4))
-	  {
-		printf("*");
-	  }
-	  else
-	  {
-		printf(" ");
-	  }
-	}
-	printf("\n");
-  }
+  printf("input number : ");
+  scanf("%lf%lf", &A, &B);
 
+  double result;
+  result = average(A, B);
+
+  printf("result : %.1lf\n", result);
+
+  system("pause..");
   return 0;
+}
+
+double average(double A, double B)
+{
+  return  ((A + B)/2);
 }
